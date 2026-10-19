@@ -27,3 +27,25 @@ function renderSingleMovie(movie) {
   <span>${movie.Year}</span>
   </div>`;
 }
+
+function filterMovies () {
+  if (filter === "OLDEST") {
+    filteredMovies.sort((a, b) =>
+      parseInt(a.Year) - parseInt(b.Year)
+    );
+  }
+
+  else if (filter === "A_Z") {
+    filteredMovies.sort((a, b) =>
+      a.Title.localeCompare(b.Title)
+    );
+  }
+
+  else if (filter === "Z_A") {
+    filteredMovies.sort((a, b) =>
+      b.Title.localeCompare(a.Title)
+    );
+  }
+}
+
+  renderMovies(filteredMovies);
