@@ -1,85 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" class="md-theme-default">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <title>Car Subscription Platform for Dealerships | Blinker.com.au</title>
-  <link href="/css/findyourcar.604be99f.css" rel="prefetch">
-  <link href="/js/findyourcar.e6a53eeb.js" rel="prefetch">
-  <link href="/css/app.a5feeff2.css" rel="preload" as="style">
-  <link href="/css/chunk-vendors.efadcd84.css" rel="preload" as="style">
-  <link href="/js/app.f6a351ca.js" rel="preload" as="script">
-  <link href="/js/chunk-vendors.3399e4f6.js" rel="preload" as="script">
-  <link href="/css/chunk-vendors.efadcd84.css" rel="stylesheet">
-  <link href="/css/app.a5feeff2" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-  </div>
-   <div class="flex flex-col"></div>
- <header class="navbar">
-  <div class="nav content-wrapper">
-    <div class="logo">
-      <img src="/img/blinker-icon.4f9b2663.png" alt="blinker logo" class="logo">
-    </div>
-    <div class="links">
-      <a href="/-" class="link router-link-exact-active router-link-active">HOME</a>
-      <a href="/findyourcar" class="link">Find your car</a>
-      <a class="btn-contact">Contact</a>
-    </div>
-    <div id="phone-nav">
-      <div class="bento-menu">
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
-        <div data-v-48b363cf></div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="filtration">
+        <input type="text" id="search" placeholder="search movies" />
+        <button id="search-btn">Search</button>
+        <select>
+          <option value="all">All</option>
+          <option value="action">A-Z</option>
+          <option value="comedy">Z-A</option>
+          <option value="drama">Year</option>
+        </select>
       </div>
-      <div class="close-btn">
-      </div>
-      <div class="showMenu">
-      <a href="" class="link router-link-exact-active router-link-active">HOME</a>
-      <a href="/findyourcar" class="link">Find your car</a>
-      <a href="" class="link router-link-exact-active router-link-active">Contact</a>
-        
-      </div>
-    </div>
-  </div>
- </header>
- <section id="landing-page">
-  <div class="content-wrapper">
-    <div class="flex">
-      <h1>Australia's most awarded car subscription platform
-      </h1>
-      <h2>Find your dream car with <span class="rgb(96, 48, 177)"Blinker></span>
-      </h2>
-    </div>
-  </div>
-  <div class="input-wrapper">
-    <input placeholder="Search by Model, Make or Keyword">
-    <button class="not-loading">
-      <svg class="svg-inline--fa fa-search fa-w-16">
-      </svg>
-    </button>
-  </div>
-  <img src="/img/building.681ea6bf.png" class="building" alt="building">
-  <div class="car-wrapper">
-    <div class="car">
-      <img src="data:image/png;base64, ivbor...wMDowMMQZbl8AAAAASUVORK5CYII" alt="headlight blinker" class="blinker"> 
-      <div class="wheel wheel1"></div>
-      <div class="wheel wheel2"></div>
-    </div>
-  </div>
- </section>
-
-  
-
-  
-</body>
+      <div id="movies"></div>
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
